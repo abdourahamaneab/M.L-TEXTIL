@@ -36,6 +36,8 @@ const Hero = () => (
         alt="L'Excellence du Textile Sénégalais" 
         className="w-full h-full object-cover"
         referrerPolicy="no-referrer"
+        fetchpriority="high"
+        decoding="async"
       />
       <div className="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
     </div>
@@ -115,6 +117,8 @@ const Heritage = () => (
           alt="Artisanat" 
           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
           referrerPolicy="no-referrer"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-soft-sapphire/5 group-hover:bg-transparent transition-colors"></div>
       </div>
@@ -145,6 +149,8 @@ const Collections = () => {
               alt={col.name} 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
               <h3 className="text-white font-serif text-2xl italic tracking-widest">{col.name}</h3>
@@ -169,6 +175,8 @@ const Lookbook = () => (
           alt="Look 1" 
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" 
           referrerPolicy="no-referrer"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="aspect-[3/4] overflow-hidden">
@@ -177,6 +185,8 @@ const Lookbook = () => (
           alt="Look 2" 
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" 
           referrerPolicy="no-referrer"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>
